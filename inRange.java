@@ -24,6 +24,7 @@ public class inRange {
  
     public static void main(String[] args) {
        primesInRange(20);
+       
     }
     
 }

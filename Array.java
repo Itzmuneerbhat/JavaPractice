@@ -1,21 +1,20 @@
+import java.util.*;
 public class Array {
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
+        int marks[] = new int[100];
 
-    // int [] marks =new int[3]; 
-    int marks[] = {97,98,83};
+        Scanner sc = new Scanner(System.in);
 
-    // marks[0] = 97;
-    // marks[1] = 82;
-    // marks[2] = 93;
+        marks[0] = sc.nextInt();
+        marks[1] = sc.nextInt();
+        marks[2] = sc.nextInt();
 
-    // System.out.println(marks[0]);
+        System.out.println("physics : "+ marks[0]);
+        System.out.println("chemistry : "+ marks[1]);
+        System.out.println("maths : "+ marks[2]);
 
-    for(int i=0; i<3;  i++){
-
-        System.out.println(marks[i]);
+        int percentage = (marks[0] + marks[1] + marks[2]) /3;
+        System.out.println("percentage ="+ percentage +"%");
     }
-
-    }
-    
 }
